@@ -1,3 +1,4 @@
+## start here
 set -e
 
 export OPTIONS="$OPTIONS"
