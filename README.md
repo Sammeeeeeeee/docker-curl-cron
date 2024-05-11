@@ -23,11 +23,11 @@ Run every hour with cron schedule (container keeps running):
     docker run -d \
         -e OPTIONS=example.com \
         -e CRON_SCHEDULE="0 1 * * *" \
-        jsonfry/curl-cron
+        sammeeeee/cron-curl
 
 Run just once (container is deleted afterwards):
 
     docker run --rm \
         -e OPTIONS=example.com \
-        jsonfry/curl-cron now
+        sammeeeee/cron-curl now
 
