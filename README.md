@@ -4,7 +4,7 @@ Docker image that runs a runs a curl command based on cron
 
 ## Usage
 
-    docker run -d [OPTIONS] jsonfry/curl-cron
+    docker run -d [OPTIONS] sammeeeee/cron-curl:latest
 
 
 ### Required Parameters:
@@ -23,11 +23,11 @@ Run every hour with cron schedule (container keeps running):
     docker run -d \
         -e OPTIONS=example.com \
         -e CRON_SCHEDULE="0 1 * * *" \
-        sammeeeee/cron-curl
+        sammeeeee/cron-curl:latest
 
 Run just once (container is deleted afterwards):
 
     docker run --rm \
         -e OPTIONS=example.com \
-        sammeeeee/cron-curl now
+        sammeeeee/cron-curl:latest now
 
