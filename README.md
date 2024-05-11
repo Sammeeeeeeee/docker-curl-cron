@@ -1,10 +1,6 @@
-[![](https://images.microbadger.com/badges/image/jsonfry/curl-cron.svg)](https://microbadger.com/images/jsonfry/s3-sync "Get your own image badge on microbadger.com")
-[![](https://images.microbadger.com/badges/version/jsonfry/curl-cron.svg)](https://microbadger.com/images/jsonfry/s3-sync "Get your own version badge on microbadger.com")
+# curl-cron
 
-
-# jsonfry/curl-cron
-
-Docker image that runs periodically runs a curl command
+Docker image that runs a runs a curl command based on cron
 
 ## Usage
 
@@ -13,7 +9,7 @@ Docker image that runs periodically runs a curl command
 
 ### Required Parameters:
 
-* `-e OPTIONS=<OPTIONS>`: curl command options
+* `-e OPTIONS=<OPTIONS>`: curl command options, accepts varibles. 
 * `-e CRON_SCHEDULE="0 1 * * *"`: specifies when cron job starts ([details](http://en.wikipedia.org/wiki/Cron)), e.g. `0 1 * * *` (runs every night at 1:00).
 
 ### Optional parameters:
