@@ -1,4 +1,5 @@
-## start here
+#!/bin/sh
+
 set -e
 
 export OPTIONS="$OPTIONS"
