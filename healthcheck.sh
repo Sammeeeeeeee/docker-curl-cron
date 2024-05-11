@@ -9,7 +9,8 @@ fi
 sleep 60
 
 if [ "$(find /var/log/curl.log -mmin -5 | wc -l)" -gt 0 ]; then
-  exit 0  # Success
+  exit 0  
 else
-  exit 1  # Failure
+  echo "marked as unhealthy!"
+  exit 1  
 fi
