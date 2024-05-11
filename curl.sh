@@ -4,6 +4,11 @@ set -e
 
 echo "$(date) - Start"
 
-curl $OPTIONS
+if curl $OPTIONS; then
+    echo "$(date) - OK"
+else
+    echo "$(date) - FAILED"
+    exit 1
+fi
 
-echo "$(date) End"
+echo "$(date) - End"
